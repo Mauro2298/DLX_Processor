@@ -1,0 +1,60 @@
+Loading db file '/home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db'
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Mon Oct 18 23:57:02 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  85.7204 uW   (91%)
+  Net Switching Power  =   8.4520 uW    (9%)
+                         ---------
+Total Dynamic Power    =  94.1724 uW  (100%)
+
+Cell Leakage Power     =  25.8819 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      4.5308            7.3242        6.8145e+03           18.6695  (  15.55%)
+register          81.0386            0.3864        1.0421e+04           91.8460  (  76.50%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.1509            0.7414        8.6465e+03            9.5388  (   7.95%)
+--------------------------------------------------------------------------------------------------
+Total             85.7204 uW         8.4520 uW     2.5882e+04 nW       120.0542 uW
+1

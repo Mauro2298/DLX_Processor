@@ -1,0 +1,58 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:01:34 2021
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  =  50.4318 uW   (42%)
+  Net Switching Power  =  69.9003 uW   (58%)
+                         ---------
+Total Dynamic Power    = 120.3320 uW  (100%)
+
+Cell Leakage Power     =   9.0487 uW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register           0.0000            0.0000            0.0000            0.0000  (   0.00%)
+sequential        34.8897            0.9858        5.0744e+03           40.9499  (  31.65%)
+combinational     15.5421           68.9144        3.9743e+03           88.4308  (  68.35%)
+--------------------------------------------------------------------------------------------------
+Total             50.4318 uW        69.9002 uW     9.0487e+03 nW       129.3807 uW
+1

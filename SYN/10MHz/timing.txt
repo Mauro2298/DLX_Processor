@@ -1,0 +1,51 @@
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Mon Oct 18 13:14:37 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: cu/cw2_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: cu/cw2_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  cu/cw2_reg[0]/CK (DFFR_X1)               0.00       0.00 r
+  cu/cw2_reg[0]/Q (DFFR_X1)                0.09       0.09 f
+  cu/U13/Z (MUX2_X1)                       0.07       0.15 f
+  cu/cw2_reg[0]/D (DFFR_X1)                0.01       0.16 f
+  data arrival time                                   0.16
+
+  clock CLK (rise edge)                  100.00     100.00
+  clock network delay (ideal)              0.00     100.00
+  cu/cw2_reg[0]/CK (DFFR_X1)               0.00     100.00 r
+  library setup time                      -0.04      99.96
+  data required time                                 99.96
+  -----------------------------------------------------------
+  data required time                                 99.96
+  data arrival time                                  -0.16
+  -----------------------------------------------------------
+  slack (MET)                                        99.80
+
+
+1

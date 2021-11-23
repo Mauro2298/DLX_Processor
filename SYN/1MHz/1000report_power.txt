@@ -1,0 +1,57 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:10:38 2021
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 364.2245 nW   (85%)
+  Net Switching Power  =  66.4999 nW   (15%)
+                         ---------
+Total Dynamic Power    = 430.7244 nW  (100%)
+
+Cell Leakage Power     =   9.1284 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network  1.5572e-02        6.3036e-02        4.0027e+03            4.0813  (  42.70%)
+register           0.3487        2.8151e-03        5.1257e+03            5.4771  (  57.30%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational      0.0000        6.4859e-04            0.0000        6.4859e-04  (   0.01%)
+--------------------------------------------------------------------------------------------------
+Total              0.3642 uW     6.6500e-02 uW     9.1284e+03 nW         9.5591 uW
+1

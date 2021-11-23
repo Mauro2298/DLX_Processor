@@ -1,0 +1,97 @@
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' has '5' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Mon Oct 18 23:58:17 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: dp/detection/Count_dec_reg[0]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_dec_reg[0]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_dec_reg[0]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_dec_reg[0]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_53/A[0] (hazard_detection_unit_DW01_inc_1)
+                                                          0.00       0.09 r
+  dp/detection/add_53/U1_1_1/CO (HA_X1)                   0.07       0.16 r
+  dp/detection/add_53/U1_1_2/CO (HA_X1)                   0.06       0.22 r
+  dp/detection/add_53/U1_1_3/CO (HA_X1)                   0.06       0.28 r
+  dp/detection/add_53/U1_1_4/CO (HA_X1)                   0.06       0.34 r
+  dp/detection/add_53/U1_1_5/CO (HA_X1)                   0.06       0.40 r
+  dp/detection/add_53/U1_1_6/CO (HA_X1)                   0.06       0.47 r
+  dp/detection/add_53/U1_1_7/CO (HA_X1)                   0.06       0.53 r
+  dp/detection/add_53/U1_1_8/CO (HA_X1)                   0.06       0.59 r
+  dp/detection/add_53/U1_1_9/CO (HA_X1)                   0.06       0.65 r
+  dp/detection/add_53/U1_1_10/CO (HA_X1)                  0.06       0.71 r
+  dp/detection/add_53/U1_1_11/CO (HA_X1)                  0.06       0.77 r
+  dp/detection/add_53/U1_1_12/CO (HA_X1)                  0.06       0.83 r
+  dp/detection/add_53/U1_1_13/CO (HA_X1)                  0.06       0.89 r
+  dp/detection/add_53/U1_1_14/CO (HA_X1)                  0.06       0.96 r
+  dp/detection/add_53/U1_1_15/CO (HA_X1)                  0.06       1.02 r
+  dp/detection/add_53/U1_1_16/CO (HA_X1)                  0.06       1.08 r
+  dp/detection/add_53/U1_1_17/CO (HA_X1)                  0.06       1.14 r
+  dp/detection/add_53/U1_1_18/CO (HA_X1)                  0.06       1.20 r
+  dp/detection/add_53/U1_1_19/CO (HA_X1)                  0.06       1.26 r
+  dp/detection/add_53/U1_1_20/CO (HA_X1)                  0.06       1.32 r
+  dp/detection/add_53/U1_1_21/CO (HA_X1)                  0.06       1.38 r
+  dp/detection/add_53/U1_1_22/CO (HA_X1)                  0.06       1.45 r
+  dp/detection/add_53/U1_1_23/CO (HA_X1)                  0.06       1.51 r
+  dp/detection/add_53/U1_1_24/CO (HA_X1)                  0.06       1.57 r
+  dp/detection/add_53/U1_1_25/CO (HA_X1)                  0.06       1.63 r
+  dp/detection/add_53/U1_1_26/CO (HA_X1)                  0.06       1.69 r
+  dp/detection/add_53/U1_1_27/CO (HA_X1)                  0.06       1.75 r
+  dp/detection/add_53/U1_1_28/CO (HA_X1)                  0.06       1.81 r
+  dp/detection/add_53/U1_1_29/CO (HA_X1)                  0.06       1.87 r
+  dp/detection/add_53/U1_1_30/CO (HA_X1)                  0.06       1.93 r
+  dp/detection/add_53/U2/Z (XOR2_X1)                      0.03       1.96 f
+  dp/detection/add_53/SUM[31] (hazard_detection_unit_DW01_inc_1)
+                                                          0.00       1.96 f
+  dp/detection/U290/ZN (INV_X1)                           0.03       1.99 r
+  dp/detection/U289/ZN (NAND4_X1)                         0.05       2.04 f
+  dp/detection/U274/ZN (NOR4_X1)                          0.06       2.10 r
+  dp/detection/U273/ZN (NAND4_X1)                         0.06       2.16 f
+  dp/detection/U271/ZN (NOR3_X1)                          0.06       2.22 r
+  dp/detection/U259/Z (MUX2_X1)                           0.06       2.28 r
+  dp/detection/U258/ZN (INV_X1)                           0.04       2.32 f
+  dp/detection/U257/ZN (AOI21_X1)                         0.06       2.38 r
+  dp/detection/U11/Z (BUF_X1)                             0.09       2.48 r
+  dp/detection/U256/ZN (NAND2_X1)                         0.05       2.52 f
+  dp/detection/U9/Z (BUF_X1)                              0.06       2.59 f
+  dp/detection/U214/Z (MUX2_X1)                           0.08       2.67 f
+  dp/detection/U213/ZN (INV_X1)                           0.03       2.69 r
+  dp/detection/Count_dec_reg[0]/D (DFF_X1)                0.01       2.70 r
+  data arrival time                                                  2.70
+
+  clock CLK (rise edge)                                  10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  dp/detection/Count_dec_reg[0]/CK (DFF_X1)               0.00      10.00 r
+  library setup time                                     -0.03       9.97
+  data required time                                                 9.97
+  --------------------------------------------------------------------------
+  data required time                                                 9.97
+  data arrival time                                                 -2.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.27
+
+
+1

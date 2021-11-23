@@ -1,0 +1,33 @@
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' has '5' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : area
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:11:26 2021
+****************************************
+
+Library(s) Used:
+
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                            2
+Number of nets:                            60
+Number of cells:                            2
+Number of combinational cells:              0
+Number of sequential cells:                 0
+Number of macros:                           0
+Number of buf/inv:                          0
+Number of references:                       2
+
+Combinational area:        163.856001
+Noncombinational area:     332.500007
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           496.356008
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+Information: This design contains black box (unknown) components. (RPT-8)
+1

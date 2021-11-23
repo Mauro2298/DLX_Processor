@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:33:59 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32            8.45e-02    0.857 2.59e+04   26.824 100.0
+  dp (data_path_DATA_SIZE32)           4.80e-02    0.494 1.64e+04   16.923  63.1
+    detection (hazard_detection_unit)  1.47e-02    0.494 1.64e+04   16.889  63.0
+      add_53 (hazard_detection_unit_DW01_inc_1)
+                                       5.37e-05 1.34e-04 1.37e+03    1.374   5.1
+      add_55 (hazard_detection_unit_DW01_inc_0)
+                                       8.51e-05 1.35e-04 1.37e+03    1.374   5.1
+    write_back_map (WB)                6.93e-04    0.000    0.000 6.93e-04   0.0
+    memory_map (memory_stage)          1.99e-03    0.000    0.000 1.99e-03   0.0
+    execute_map (execute)              1.76e-03    0.000    0.000 1.76e-03   0.0
+    decode_map (decode)                6.66e-03    0.000    0.000 6.66e-03   0.0
+    fetch_map (fetch)                  2.22e-02    0.000    0.000 2.22e-02   0.1
+  cu (dlx_cu_HW_MICROCODE_MEM_SIZE10_FUNC_SIZE11_OP_CODE_SIZE6_IR_SIZE32_CW_SIZE19)
+                                       3.65e-02    0.363 9.50e+03    9.901  36.9
+1

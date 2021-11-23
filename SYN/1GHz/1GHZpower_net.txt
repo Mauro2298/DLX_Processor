@@ -1,0 +1,106 @@
+ 
+****************************************
+Report : power
+        -net
+        -analysis_effort low
+        -sort_mode net_switching_power
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:04:14 2021
+****************************************
+
+
+Library(s) Used:
+
+    gtech (File: /software/synopsys/syn_current_64.11/libraries/syn/gtech.db)
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx_ADDR_SIZE32_DATA_SIZE32
+                       5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+
+  Attributes
+  ----------
+      a  -  Switching activity information annotated on net
+      d  -  Default switching activity information on net
+
+                             Total      Static   Toggle   Switching
+Net                          Net Load   Prob.    Rate     Power      Attrs
+--------------------------------------------------------------------------------
+out_IR_fetch_signal[30]       16.856    0.500    0.1000      1.0198  d
+out_IR_fetch_signal[28]       12.569    0.500    0.1000      0.7604  d
+out_IR_fetch_signal[5]         9.682    0.500    0.1000      0.5858  d
+out_branch_signal              9.620    0.500    0.1000      0.5820  d
+out_IR_fetch_signal[26]        7.973    0.500    0.1000      0.4824  d
+out_IR_fetch_signal[31]        7.370    0.500    0.1000      0.4459  d
+out_IR_fetch_signal[1]         6.166    0.500    0.1000      0.3731  d
+out_IR_fetch_signal[0]         6.160    0.500    0.1000      0.3727  d
+out_IR_fetch_signal[2]         6.067    0.500    0.1000      0.3671  d
+out_IR_fetch_signal[29]        5.856    0.500    0.1000      0.3543  d
+out_IR_fetch_signal[27]        4.498    0.500    0.1000      0.2721  d
+out_IR_fetch_signal[3]         4.136    0.500    0.1000      0.2502  d
+out_IR_fetch_signal[6]         4.005    0.500    0.1000      0.2423  d
+out_IR_fetch_signal[4]         2.073    0.500    0.1000      0.1254  d
+out_IR_fetch_signal[10]        1.974    0.500    0.1000      0.1194  d
+out_IR_fetch_signal[9]         1.269    0.500    0.1000      0.0768  d
+out_IR_fetch_signal[8]         1.250    0.500    0.1000      0.0756  d
+out_IR_fetch_signal[7]         1.231    0.500    0.1000      0.0745  d
+DP_RF_RS1_signal               1.645    0.348    0.0706      0.0702  
+DP_RF_RS2_signal               1.645    0.348    0.0706      0.0702  
+DP_RF_enable_signal            1.645    0.348    0.0706      0.0702  
+DP_reg1_enable_signal          1.645    0.348    0.0706      0.0702  
+out_bubble_signal              9.918    0.014    0.0110      0.0663  
+DP_Jump_25_signal              1.645    0.066    0.0200      0.0199  
+DP_muxs2_signal                0.310    0.200    0.0789      0.0148  
+DP_reg2_signal                 0.310    0.200    0.0789      0.0148  
+DP_muxs1_signal                0.310    0.177    0.0745      0.0140  
+DP_reg3_signal                 0.310    0.163    0.0643      0.0121  
+DP_RF_WR_RDneg_signal          0.310    0.120    0.0528      0.0099  
+DP_muxs3_signal                0.310    0.093    0.0440      0.0083  
+DP_FUNC_signal[0]              0.310    0.061    0.0346      0.0065  
+DP_FUNC_signal[1]              0.310    0.066    0.0340      0.0064  
+DP_FUNC_signal[4]              0.310    0.051    0.0296      0.0055  
+DP_FUNC_signal[2]              0.310    0.050    0.0253      0.0047  
+DP_MUX_PC_mem_signal           0.310    0.042    0.0213      0.0040  
+DP_CS_signal                   0.310    0.039    0.0197      0.0037  
+DP_FUNC_signal[3]              0.310    0.032    0.0166      0.0031  
+DP_RD_WRN_mem_signal           0.310    0.024    0.0133      0.0025  
+DP_MUX_RD_WR_sel_signal        0.310    0.011    0.0064      0.0012  
+DP_MUX_RS2_WR_sel_signal       0.310    0.011    0.0064      0.0012  
+DP_NPC_enable_signal           0.310    0.966    0.0060      0.0011  
+DP_PC_enable_signal            0.310    0.965    0.0060      0.0011  
+DP_pre_IMMM_enable_signal      0.310    0.966    0.0060      0.0011  
+out_IR_fetch_signal[11]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[12]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[13]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[14]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[15]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[16]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[17]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[18]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[19]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[20]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[21]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[22]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[23]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[24]        0.000    0.500    0.1000      0.0000  d
+out_IR_fetch_signal[25]        0.000    0.500    0.1000      0.0000  d
+--------------------------------------------------------------------------------
+Total (58 nets)                                              7.0628 uW
+1

@@ -1,0 +1,21 @@
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : clocks
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Mon Oct 18 13:14:44 2021
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+    g - lib_generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+CLK            100.00   {0 50}                        {CLK}
+--------------------------------------------------------------------------------
+1

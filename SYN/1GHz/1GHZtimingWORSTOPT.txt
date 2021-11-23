@@ -1,0 +1,587 @@
+Warning: Design 'dlx_ADDR_SIZE32_DATA_SIZE32' has '5' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+Design : dlx_ADDR_SIZE32_DATA_SIZE32
+Version: F-2011.09-SP3
+Date   : Tue Oct 19 00:06:00 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U25/ZN (AND2_X1)                    0.04       0.34 r
+  dp/detection/add_55/U43/ZN (AND2_X1)                    0.04       0.38 r
+  dp/detection/add_55/U58/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[30] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U270/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[2]/D (DFF_X1)                0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[2]/CK (DFF_X1)               0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U25/ZN (AND2_X1)                    0.04       0.34 r
+  dp/detection/add_55/U43/ZN (AND2_X1)                    0.04       0.38 r
+  dp/detection/add_55/U58/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[30] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U254/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[14]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[14]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[23]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U25/ZN (AND2_X1)                    0.04       0.34 r
+  dp/detection/add_55/U43/ZN (AND2_X1)                    0.04       0.38 r
+  dp/detection/add_55/U58/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[30] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U245/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[23]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[23]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[25]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U25/ZN (AND2_X1)                    0.04       0.34 r
+  dp/detection/add_55/U43/ZN (AND2_X1)                    0.04       0.38 r
+  dp/detection/add_55/U58/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[30] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U242/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[25]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[25]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[20]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U25/ZN (AND2_X1)                    0.04       0.34 r
+  dp/detection/add_55/U43/ZN (AND2_X1)                    0.04       0.38 r
+  dp/detection/add_55/U58/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[30] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U248/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[20]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[20]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[2]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U27/ZN (AND2_X1)                    0.04       0.33 r
+  dp/detection/add_55/U35/ZN (AND2_X1)                    0.04       0.37 r
+  dp/detection/add_55/U64/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[29] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U270/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[2]/D (DFF_X1)                0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[2]/CK (DFF_X1)               0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[14]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U27/ZN (AND2_X1)                    0.04       0.33 r
+  dp/detection/add_55/U35/ZN (AND2_X1)                    0.04       0.37 r
+  dp/detection/add_55/U64/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[29] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U254/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[14]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[14]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[23]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U27/ZN (AND2_X1)                    0.04       0.33 r
+  dp/detection/add_55/U35/ZN (AND2_X1)                    0.04       0.37 r
+  dp/detection/add_55/U64/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[29] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U245/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[23]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[23]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[25]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U27/ZN (AND2_X1)                    0.04       0.33 r
+  dp/detection/add_55/U35/ZN (AND2_X1)                    0.04       0.37 r
+  dp/detection/add_55/U64/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[29] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U242/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[25]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[25]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+  Startpoint: dp/detection/Count_exe_reg[5]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: dp/detection/Count_exe_reg[20]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx_ADDR_SIZE32_DATA_SIZE32
+                     5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  dp/detection/Count_exe_reg[5]/CK (DFF_X1)               0.00       0.00 r
+  dp/detection/Count_exe_reg[5]/Q (DFF_X1)                0.09       0.09 r
+  dp/detection/add_55/A[5] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.09 r
+  dp/detection/add_55/U115/ZN (NAND2_X1)                  0.03       0.12 f
+  dp/detection/add_55/U94/ZN (NOR2_X1)                    0.04       0.16 r
+  dp/detection/add_55/U31/ZN (AND2_X1)                    0.04       0.21 r
+  dp/detection/add_55/U88/ZN (AND2_X1)                    0.04       0.25 r
+  dp/detection/add_55/U2/ZN (AND2_X2)                     0.05       0.29 r
+  dp/detection/add_55/U27/ZN (AND2_X1)                    0.04       0.33 r
+  dp/detection/add_55/U35/ZN (AND2_X1)                    0.04       0.37 r
+  dp/detection/add_55/U64/Z (XOR2_X1)                     0.03       0.41 f
+  dp/detection/add_55/SUM[29] (hazard_detection_unit_DW01_inc_3)
+                                                          0.00       0.41 f
+  dp/detection/U88/ZN (NOR4_X1)                           0.09       0.50 r
+  dp/detection/U75/ZN (AND2_X1)                           0.05       0.55 r
+  dp/detection/U70/ZN (NAND3_X1)                          0.03       0.58 f
+  dp/detection/U79/ZN (NOR2_X1)                           0.04       0.62 r
+  dp/detection/U19/Z (MUX2_X2)                            0.05       0.67 r
+  dp/detection/U22/ZN (NAND2_X1)                          0.03       0.70 f
+  dp/detection/U21/ZN (NOR2_X1)                           0.04       0.74 r
+  dp/detection/U229/ZN (OAI21_X1)                         0.03       0.77 f
+  dp/detection/U230/ZN (INV_X1)                           0.05       0.82 r
+  dp/detection/U29/ZN (AND2_X1)                           0.05       0.87 r
+  dp/detection/U41/ZN (INV_X1)                            0.04       0.91 f
+  dp/detection/U248/ZN (OAI22_X1)                         0.05       0.95 r
+  dp/detection/Count_exe_reg[20]/D (DFF_X1)               0.01       0.96 r
+  data arrival time                                                  0.96
+
+  clock CLK (rise edge)                                   1.00       1.00
+  clock network delay (ideal)                             0.00       1.00
+  dp/detection/Count_exe_reg[20]/CK (DFF_X1)              0.00       1.00 r
+  library setup time                                     -0.04       0.96
+  data required time                                                 0.96
+  --------------------------------------------------------------------------
+  data required time                                                 0.96
+  data arrival time                                                 -0.96
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
